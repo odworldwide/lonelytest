@@ -1,0 +1,254 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #660f09;
+    color: #dd3;
+    font-family: courier, monospace;
+    font-weight:}
+
+#main {
+    max-width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.93);
+}
+
+.spacer {
+    flex: 1;
+}
+
+#start {
+    display: block;
+    padding: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+#website {
+    display: flex;
+    font-size: 0.5em;
+    text-align: right;
+    width:53%;
+    position:relative;
+    left:80px;
+    hover: background-color: yellow;
+
+
+}
+
+#command-form {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#command {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0.2em;
+}
+
+#game {
+    flex: 1;
+    font-size: 20px
+}
+
+#game p {
+    padding: 4px 10px;
+}
+
+.info {
+    border-left: 5px solid #999;
+}
+
+.info.warning {
+    border-color: #e89f28;
+}
+
+.info.success {
+    border-color: #70c12a;
+}
+
+.info.fail {
+    border-color: #d63d3d;
+}
+
+span.warning {
+    color: #e89f28;
+}
+
+span.success {
+    color: #70c12a;
+}
+
+.command-line {
+    text-align: right;
+}
+
+.command-line.invalid {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.suggest {
+    color: red;
+    border-bottom: 1px solid;
+    animation: huey 5s linear infinite;
+    animation-play-state: running;
+    text-shadow: 1px 2px 3px #666;
+}
+
+@keyframes huey {
+    from {
+        color: red;
+        border-bottom: 1px solid;
+        animation: huey 5s linear infinite;
+        animation-play-state: running;
+        text-shadow: 1px 2px 3px #666;
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#level {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    color: red;
+    font-size: 32px;
+
+}
+
+#help-help {
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    color: red;
+    font-size: 18px;
+}
+
+#help-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    z-index: -1;
+}
+
+#help {
+    color: red;
+    font-size: 24px;
+    width: 50%;
+    text-align: center;
+    display: none;
+}
+
+@keyframes example {
+    from {
+        background-color: #617dd1;
+    }
+
+    to {
+        background-color: red;
+    }
+}
+
+a:link,
+a:visited {
+    color: red;
+    text-shadow: none;
+    text-decoration: none;
+
+    a:hover {
+  background-color: yellow;
+
+  }
+}
+
+@media (max-width:1098px){
+
+ /* Help help */
+ #help-help{
+  visibility:hidden;
+ }
+
+ /* Start */
+ #start{
+  transform:translatex(3px) translatey(-123px);
+  font-size:33px;
+ }
+
+ /* Command */
+ #command{
+  transform: translatey(-256px);
+ }
+
+}
+
+@media (max-width:576px){
+
+ /* Level */
+ #level{
+  transform:scale(0.8);
+  font-size:29px;
+ }
+
+ /* Help help */
+ #help-help{
+  transform:scale(0.75);
+  visibility:hidden;
+ }
+
+ /* Play music */
+ .play-music{
+  transform:scale(0.70);
+ }
+
+ /* Stop music */
+ .stop-music{
+  transform:scale(0.70);
+ }
+
+ /* Start */
+ #start{
+  font-size:18px;
+  transform:scale(1.11) translatey(-124px);
+ }
+
+ /* Spacer */
+ #main .spacer{
+  transform:scale(0.61);
+ }
+
+ /* Command form */
+ #command-form{
+  transform: translatey(-256px);
+ }
+
+ /* Main */
+ #main{
+  transform:translatex(0px) translatey(0px);
+ }
+
+ /* Command */
+ #command{
+  transform: translatey(-129px);
+ }
+
+}
