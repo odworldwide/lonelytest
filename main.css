@@ -180,3 +180,58 @@ a:visited {
 
   }
 }
+
+@media (max-width:1098px){
+
+ /* Help help */
+ #help-help{
+  visibility:hidden;
+ }
+ 
+ /* Start */
+ #start{
+  transform:translatex(3px) translatey(-123px);
+  font-size:33px;
+ }
+ 
+ 
+}
+
+@media (max-width:576px){
+
+ /* Level */
+ #level{
+  transform:scale(0.8);
+  font-size:29px;
+ }
+ 
+ /* Help help */
+ #help-help{
+  transform:scale(0.75);
+  visibility:hidden;
+ }
+ 
+ /* Play music */
+ .play-music{
+  transform:scale(0.70);
+ }
+ 
+ /* Stop music */
+ .stop-music{
+  transform:scale(0.70);
+ }
+ 
+ 
+ /* Spacer */
+ #main .spacer{
+  transform:scale(0.61);
+ }
+ 
+
+ /* Main */
+ #main{
+  transform:translatex(0px) translatey(0px);
+ }
+ 
+ 
+
