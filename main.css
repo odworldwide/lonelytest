@@ -26,8 +26,6 @@ body {
     padding: 1em;
     font-size: 2em;
     text-align: center;
-    width:100%;
-
 }
 
 #website {
@@ -130,8 +128,7 @@ span.success {
     right: 8px;
     color: red;
     font-size: 32px;
-     width:10%;
-
+    
 
 }
 
@@ -141,8 +138,6 @@ span.success {
     right: 8px;
     color: red;
     font-size: 18px;
-    width:10%;
-
 }
 
 #help-wrapper {
@@ -186,4 +181,59 @@ a:visited {
   background-color: yellow;
 
   }
+}
+
+@media (max-width:1098px){
+
+ /* Help help */
+ #help-help{
+  visibility:hidden;
+ }
+
+ /* Start */
+ #start{
+  transform:translatex(3px) translatey(-123px);
+  font-size:33px;
+ }
+
+
+}
+
+@media (max-width:576px){
+
+ /* Level */
+ #level{
+  transform:scale(0.8);
+  font-size:29px;
+ }
+
+ /* Help help */
+ #help-help{
+  transform:scale(0.75);
+  visibility:hidden;
+ }
+
+ /* Play music */
+ .play-music{
+  transform:scale(0.70);
+ }
+
+ /* Stop music */
+ .stop-music{
+  transform:scale(0.70);
+ }
+
+
+ /* Spacer */
+ #main .spacer{
+  transform:scale(0.61);
+ }
+
+
+ /* Main */
+ #main{
+  transform:translatex(0px) translatey(0px);
+ }
+
+
 }
